@@ -154,11 +154,14 @@
         <img src="https://cdn-pays.bnpparibas.com/wp-content/themes/bnpparibasworld/assets/img/logo-default.png" class="logostyle" alt="BNP PARIBAS Logo" width="168px" height="37px">
     </a>
     <!-- <span class="country">Netherlands</span> -->
+    <div>
     <span id="description">The bank for a changing world</span>
+    </div>
     </div>
     <div class="main-container"> 
       <div class="text-container">
-        <h2 id="dialog">Would you like to start a co-browsing session with a MetLife adviser?</h2>
+        <h2 id="dialog">Would you like to start a co-browsing session with a BNP Paribas adviser?</h2>
+        <h5><i>Turning changes into Opportunities</i></h5>
         <h3 id="sessionId"></h3>
         <button id="agreeButton">Agree</button>
         <button id="cancelButton">Cancel</button>
@@ -183,7 +186,7 @@
     (window,document,'script','Surfly');
     
     var settings = {
-      widget_key:"74fa9db27ddc4cd1b55801509da5ba51",
+      widget_key:"4fcb5cbb3a3346f3b71cd11a19571e59",
     };
     
     Surfly.init(settings, function(initResult) {
@@ -210,7 +213,7 @@
             })
         .on("viewer_joined", function(session, event) {
             if (event.count == 1) {
-              session.relocate("https://www.metlife.com.bd/");
+              session.relocate("https://www.bnpparibas.nl/");
             }
               });
         }
@@ -221,7 +224,7 @@
 
     var cancelButton = document.getElementById("cancelButton");
     cancelButton.addEventListener("click", function() {
-      location.assign("https://www.metlife.com.bd/");
+      location.assign("https://www.bnpparibas.nl/");
     })
 
     </script>
